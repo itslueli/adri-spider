@@ -1,0 +1,17 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+.photo {
+    background-image: url('assets/images/spiderman/telaraña.png');
+    background-size: cover;
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+}
+/* Efecto al desbloquear una foto */
+.photo.unlocked {
+    background-image: none;
+}
